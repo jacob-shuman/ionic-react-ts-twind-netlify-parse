@@ -1,6 +1,0 @@
-{
-	"appId": "io.ionic.starter",
-	"appName": "ionic-react-ts-netlify",
-	"webDir": "build",
-	"bundledWebRuntime": false
-}

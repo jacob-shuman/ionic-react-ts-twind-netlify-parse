@@ -1,0 +1,12 @@
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[build]
+base = "web"
+command = "npm run build"
+publish = "build"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"

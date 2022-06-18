@@ -1,0 +1,88 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/src/**/*.(spec|test).[tj]s?(x)"
+            ],
+            "plugins": [
+                "jest"
+            ],
+            "extends": [
+                "plugin:jest/recommended"
+            ],
+            "rules": {
+                "jest/prefer-expect-assertions": "off"
+            }
+        }
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": [
+            "./tsconfig.json"
+        ]
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "no-restricted-imports": [
+            "error",
+            {
+                "patterns": [
+                    "src/"
+                ]
+            }
+        ],
+        "require-await": "off",
+        "no-return-await": "off",
+        "@typescript-eslint/require-await": "error",
+        "@typescript-eslint/return-await": [
+            "error",
+            "always"
+        ],
+        "@typescript-eslint/no-misused-promises": "error",
+        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/await-thenable": "error",
+        "@typescript-eslint/promise-function-async": [
+            "error",
+            {
+                "checkArrowFunctions": true,
+                "checkFunctionDeclarations": true,
+                "checkFunctionExpressions": true,
+                "checkMethodDeclarations": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "project-shared",
+  "description": "Shared code for the template project",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "dependencies": {
+    "@ionic-native/core": "^5.36.0",
+    "parse": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/parse": "^2.18.13"
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "React TS Functional Component": {
+        "prefix": "rfc",
+        "body": [
+            "export interface ${1:}Props {${2:}}",
+            "",
+            "export const ${1:}: React.FC<${1:}Props> = () => {",
+            "  return <>${3:}</>;",
+            "};",
+            "",
+            "export default ${1:};",
+            ""
+        ],
+    },
+    "React TS Functional Component Inline": {
+        "prefix": "rfci",
+        "body": [
+            "export interface ${1:}Props {${2:}}",
+            "",
+            "export const ${1:}: React.FC<${1:}Props> = () => <>${3:}</>;",
+            "",
+            "export default ${1:};",
+            ""
+        ]
+    }
+}

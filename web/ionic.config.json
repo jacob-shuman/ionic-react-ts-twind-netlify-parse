@@ -1,0 +1,7 @@
+{
+  "name": "TITLE_HERE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

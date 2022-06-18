@@ -1,0 +1,9 @@
+{
+	"appId": "org.example.template",
+	"appName": "TITLE_HERE",
+	"webDir": "build",
+	"bundledWebRuntime": true,
+	"server": {
+		"url": "http://10.0.0.228:8101"
+	}
+}
